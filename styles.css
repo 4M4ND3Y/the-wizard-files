@@ -1,0 +1,321 @@
+/* Harry Potter Font */
+
+@font-face {
+    font-family: "HarryP";
+    src: url("/fonts/HARRYP__.TTF") format("truetype");
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.home {
+    background-image: url("/images/home-background.jpg");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pages {
+    background-image: url("/images/pages-background.jpg");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    background-color: rgba(10, 10, 10, 0.6);
+}
+
+.navbar .collapse .navbar-nav a {
+    color: #f5e9c8;
+    font-family: "HarryP", serif;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.navbar .navbar-brand img {
+    margin-left: 10px;
+}
+
+.navbar .navbar-toggler {
+    color: #f5e9c8;
+    border-color: #f5e9c8;
+}
+
+.navbar .material-symbols-outlined {
+    font-size: 2rem;
+}
+
+.navbar .d-flex .form-control {
+    background-color: rgba(10, 10, 10, 0.6);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #f5e9c8;
+}
+
+.navbar .d-flex .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar .d-flex .btn {
+    border-color: #f5e9c8;
+    color: #f5e9c8;
+}
+
+.navbar .d-flex .btn:hover {
+    background-color: #f5e9c8;
+    color: black;
+}
+
+.navbar .d-flex .btn:active {
+    border-color: #f5e9c8;
+    background-color: #f5e9c8;
+    color: black;
+}
+
+.navbar .d-flex .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.card {
+    position: relative;
+    top: 15%;
+    text-align: center;
+    margin: 10px;
+}
+
+.card.character .card-text {
+    text-align: justify;
+    font-family: "Merriweather", serif;
+}
+
+.card.character img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.card.character {
+    width: 20%; /* or, 18rem for 5 cards in a row */
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    margin: 1rem auto;
+}
+
+.card.character:hover {
+    transform: scale(1.01);
+}
+
+.character-with-b {
+    display: flex;
+    flex-direction: row;
+    padding-top: 107px;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card.order {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+}
+
+.card.order .card-body {
+    font-family: "HarryP", serif;
+    font-size: 70px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.card.character .card-body .card-title {
+    font-family: "MedievalSharp", cursive;
+    font-size: 30px;
+    text-decoration: underline dashed;
+}
+
+.card.character .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card.character .card-body .btn.btn-primary {
+    align-self: center;
+    margin-bottom: 0;
+}
+
+.card.order.surname {
+    width: 50%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4); /* semi-transparent dark background */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+}
+
+.card.order.surname .card-body {
+    color: gold;
+    font-size: 85px;
+}
+
+.navbar .collapse .dropdown-menu {
+    background-color: rgba(10, 10, 10, 0.6);
+}
+
+.navbar .collapse .dropdown-menu .dropdown-item:hover,
+.navbar .collapse .dropdown-menu .dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card.order.home-content .card-body {
+    color: goldenrod;
+    font-size: 25px;
+    text-align: justify;
+    font-family: "Merriweather", serif;
+}
+
+.card.order.about-me-content .card-body,
+.card.order.info-content .card-body {
+    color: gold;
+    font-size: 25px;
+    text-align: justify;
+    font-family: "Merriweather", serif;
+}
+
+.card.order.home-content,
+.card.order.about-me-content,
+.card.order.info-content {
+    top: 30%;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+}
+
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-body .home-title {
+    font-size: 40px;
+    font-family: "MedievalSharp", cursive;
+    align-self: center;
+}
+
+.card .card-body .about-me-title,
+.card .card-body .info-title {
+    font-size: 40px;
+    font-family: "MedievalSharp", cursive;
+    align-self: center;
+    color: blueviolet;
+}
+
+.card .card-body .home-title#title {
+    font-size: 100px;
+    font-family: "HarryP", serif;
+    color: gold;
+}
+
+.card.order.contact-me-form {
+    height: 55%;
+    margin-top: 8%;
+}
+
+.card.order.contact-me-form .card-body .form-floating {
+    margin: 10px;
+}
+
+.card.order.contact-me-form .card-body .form-floating.name #floatingName,
+.card.order.contact-me-form .card-body .form-floating.email #floatingEmail {
+    font-family: "Merriweather", serif;
+    padding-top: 30px;
+    /* IMPORTANT : something is wrong, will change in future */
+    background-color: rgba(10, 10, 10, 0.6);
+    color: #f5e9c8;
+    /* end */
+}
+
+.card.order.contact-me-form
+    .card-body
+    .form-floating.comments
+    #floatingTextarea2 {
+    height: 150px;
+    font-family: "Merriweather", serif;
+    padding-top: 30px;
+    /* IMPORTANT : something is wrong, will change in future */
+    background-color: rgba(10, 10, 10, 0.6);
+    color: #f5e9c8;
+    /* end */
+}
+
+.card .card-body .form-floating label {
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    /* IMPORTANT : something is wrong, will change in future */
+    color: gold;
+    /* end */
+}
+
+.card .card-body .btn.btn-primary {
+    width: 98.6%;
+    margin: auto;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+}
+
+.card.order.contact-me-links {
+    margin-top: 0;
+    padding-top: 0;
+    backdrop-filter: blur(12px);
+}
+
+.card.order.contact-me-links .card-body {
+    font-size: 30px;
+    font-family: "Merriweather", serif;
+    color: gold;
+}
+
+.card.order.contact-me-links .card-body .links a#linkedin {
+    padding-right: 20px;
+    color: #0077b5;
+}
+
+.card.order.contact-me-links .card-body .links a#github {
+    padding-right: 20px;
+    color: #181717;
+}
+
+.card.order.contact-me-links .card-body .links a#medium {
+    padding-right: 20px;
+    color: #12100e;
+}
+
+.card.order.contact-me-links .card-body .links a .fa-brands:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+#contact-me-body .card {
+    position: relative;
+    top: 0;
+}
+
+#info-body .card,
+#about-me-body .card {
+    position: relative;
+    top: 15%;
+}
