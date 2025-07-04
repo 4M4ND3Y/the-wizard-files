@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "HarryP";
-    src: url("/fonts/HARRYP__.TTF") format("truetype");
+    src: url("fonts/HARRYP__.TTF") format("truetype");
 }
 
 body,
