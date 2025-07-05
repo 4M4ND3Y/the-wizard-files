@@ -6,8 +6,7 @@
 
 ## 🌐 Live Website
 
-👉 **Visit Here:**  
-[The Wizard Files](https://4m4nd3y.github.io/the-wizard-files/)
+👉 **Visit Here:**  [The Wizard Files](https://4m4nd3y.github.io/the-wizard-files/)
 
 ---
 
