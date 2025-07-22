@@ -319,3 +319,8 @@ html {
     position: relative;
     top: 15%;
 }
+
+/* Removes the white box around Comments */
+.form-floating.comments > label::after {
+    background-color: transparent !important;
+}
